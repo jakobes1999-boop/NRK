@@ -1,0 +1,21 @@
+{
+  "d7_loco_koef_maks": 0.03158310402167075,
+  "d7_loco_koef_min": 0.027738019041002815,
+  "d7_loco_maks_abs_avvik": 0.0021424747905103188,
+  "event_antall_p_under_005": 5,
+  "event_antall_termer": 12,
+  "event_felles_F": 62.49212086498065,
+  "event_felles_df_denom": 26,
+  "event_felles_df_num": 12,
+  "event_felles_p": 4.913615280078642e-16,
+  "event_koef_snitt": -0.0018992846673667374,
+  "event_kolonner": 290,
+  "event_prosent_maks": 0.42963819026920247,
+  "event_prosent_min": -1.136672187652522,
+  "event_rang": 279,
+  "event_residual_df": 369,
+  "placebo_loco_antall_p_under_005": 2,
+  "placebo_loco_koef_maks": -0.0012548985538813895,
+  "placebo_loco_koef_min": -0.0029612025474889947,
+  "placebo_loco_maks_abs_avvik": 0.0010619166489427637
+}

@@ -1,0 +1,54 @@
+# Wild cluster bootstrap (WCR), B = 999, seed = 1
+Dose per område og måned (snitt av daglige andeler), som i s13:
+| maned   |   NO1 |   NO2 |   NO5 |
+|:--------|------:|------:|------:|
+| 2025-10 | 0.23  | 0.259 | 0.175 |
+| 2025-11 | 0.481 | 0.522 | 0.407 |
+| 2025-12 | 0.646 | 0.686 | 0.595 |
+| 2026-01 | 0.784 | 0.811 | 0.763 |
+| 2026-02 | 0.891 | 0.907 | 0.882 |
+| 2026-03 | 0.953 | 0.96  | 0.946 |
+| 2026-04 | 0.987 | 0.99  | 0.986 |
+
+  D7 område×måned×EAC-FE + sesong per EAC              bestilt_post rademacher  koef  0.02988  se 0.00284  p_t 0.0000  p_wcb 0.0010  KI [ 0.02423,  0.03660]
+  D7 tidlig/sent                                       tidlig_post  rademacher  koef  0.03094  se 0.00299  p_t 0.0000  p_wcb 0.0010  KI [ 0.02507,  0.03761]
+  D7 tidlig/sent                                       sent_post    rademacher  koef  0.02861  se 0.00320  p_t 0.0000  p_wcb 0.0010  KI [ 0.02208,  0.03548]
+  D7 placebo okt 2024                                  bestilt_post rademacher  koef -0.00190  se 0.00124  p_t 0.1390  p_wcb 0.1400  KI [-0.00416,  0.00104]
+  E1 sesong per kohort                                 sent_post    rademacher  koef  0.01310  se 0.00756  p_t 0.0950  p_wcb 0.0900  KI [-0.00186,  0.02817]
+  E1 sesong per kohort                                 sent_dose    rademacher  koef  0.02092  se 0.00915  p_t 0.0307  p_wcb 0.0150  KI [ 0.00477,  0.03923]
+  E4 sesong per kohort, sent kun via dose              sent_dose    rademacher  koef  0.03642  se 0.00343  p_t 0.0000  p_wcb 0.0010  KI [ 0.03007,  0.04342]
+  E6 Husholdning Høy (9 klustre)                       tidlig_post  rademacher  koef  0.02357  se 0.00280  p_t 0.0000  p_wcb 0.0330  KI [ 0.01251,  0.03464]
+  E6 Husholdning Høy (9 klustre)                       tidlig_post  webb        koef  0.02357  se 0.00280  p_t 0.0000  p_wcb 0.0210  KI [ 0.01251,  0.03464]
+  E6 Husholdning Høy (9 klustre)                       sent_dose    rademacher  koef  0.00637  se 0.00966  p_t 0.5285  p_wcb 0.3980  KI [-0.01594,  0.04261]
+  E6 Husholdning Høy (9 klustre)                       sent_dose    webb        koef  0.00637  se 0.00966  p_t 0.5285  p_wcb 0.4070  KI [-0.01525,  0.04070]
+  E6 Husholdning Lav (9 klustre)                       tidlig_post  rademacher  koef  0.04256  se 0.00527  p_t 0.0000  p_wcb 0.0220  KI [ 0.02509,  0.06292]
+  E6 Husholdning Lav (9 klustre)                       tidlig_post  webb        koef  0.04256  se 0.00527  p_t 0.0000  p_wcb 0.0380  KI [ 0.02176,  0.06337]
+  E6 Husholdning Lav (9 klustre)                       sent_dose    rademacher  koef  0.04098  se 0.01400  p_t 0.0191  p_wcb 0.0820  KI [-0.01430,  0.09129]
+  E6 Husholdning Lav (9 klustre)                       sent_dose    webb        koef  0.04098  se 0.01400  p_t 0.0191  p_wcb 0.0890  KI [-0.01430,  0.09239]
+  E6 Husholdning Medium (9 klustre)                    tidlig_post  rademacher  koef  0.02853  se 0.00274  p_t 0.0000  p_wcb 0.0030  KI [ 0.02486,  0.03424]
+  E6 Husholdning Medium (9 klustre)                    tidlig_post  webb        koef  0.02853  se 0.00274  p_t 0.0000  p_wcb 0.0150  KI [ 0.02486,  0.03423]
+  E6 Husholdning Medium (9 klustre)                    sent_dose    rademacher  koef  0.02229  se 0.01364  p_t 0.1409  p_wcb 0.1150  KI [-0.01440,  0.05846]
+  E6 Husholdning Medium (9 klustre)                    sent_dose    webb        koef  0.02229  se 0.01364  p_t 0.1409  p_wcb 0.1080  KI [-0.01426,  0.06269]
+  D6 Husholdning Høy (9 klustre)                       bestilt_post rademacher  koef  0.02391  se 0.00265  p_t 0.0000  p_wcb 0.0250  KI [ 0.01341,  0.03440]
+  D6 Husholdning Høy (9 klustre)                       bestilt_post webb        koef  0.02391  se 0.00265  p_t 0.0000  p_wcb 0.0290  KI [ 0.01341,  0.03440]
+  D6 Husholdning Lav (9 klustre)                       bestilt_post rademacher  koef  0.03831  se 0.00440  p_t 0.0000  p_wcb 0.0010  KI [ 0.02923,  0.05040]
+  D6 Husholdning Lav (9 klustre)                       bestilt_post webb        koef  0.03831  se 0.00440  p_t 0.0000  p_wcb 0.0030  KI [ 0.02846,  0.05045]
+  D6 Husholdning Medium (9 klustre)                    bestilt_post rademacher  koef  0.02557  se 0.00297  p_t 0.0000  p_wcb 0.0010  KI [ 0.01486,  0.03321]
+  D6 Husholdning Medium (9 klustre)                    bestilt_post webb        koef  0.02557  se 0.00297  p_t 0.0000  p_wcb 0.0060  KI [ 0.01498,  0.03340]
+
+Kjøretid modeller: 128.6 s
+
+## Sanity-sjekk: p-fordeling når nullhypotesen er sann
+Utfallet konstrueres på nytt i D7-rammen: y = tilpasset verdi uten bestilt_post + støy med
+klusterkomponent (klusterspesifikt nivå + AR-fri idiosynkratisk ledd), skalert til samme
+residualspredning som i den virkelige modellen. Sann effekt er null. 200 simuleringer,
+B = 199 per simulering (av kjøretidshensyn); rapporterer andel p < 0,05 for klusterrobust
+t-test og for WCR.
+Simuleringer: 200, kjøretid 109.3 s
+- Klusterrobust t(G−1): andel p < 0,05 = 0.055; p < 0,10 = 0.085
+- WCR (Rademacher, B = 199): andel p < 0,05 = 0.050; p < 0,10 = 0.090
+- Kolmogorov–Smirnov mot uniform for WCR-p: D = 0.085, p = 0.105
+- Desilfordeling av WCR-p (forventet 0,10 i hver):
+|       |   0.0–0.1 |   0.1–0.2 |   0.2–0.3 |   0.3–0.4 |   0.4–0.5 |   0.5–0.6 |   0.6–0.7 |   0.7–0.8 |   0.8–0.9 |   0.9–1.0 |
+|:------|----------:|----------:|----------:|----------:|----------:|----------:|----------:|----------:|----------:|----------:|
+| andel |      0.09 |      0.09 |      0.12 |      0.08 |     0.115 |     0.105 |      0.06 |      0.09 |      0.07 |      0.18 |

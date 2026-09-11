@@ -1,0 +1,38 @@
+{
+  "did": {
+    "grupper": 27,
+    "maaneder": 31,
+    "rader": 837,
+    "sum_kwh": 49004909114.959,
+    "sum_log_y": 5715.928702422889,
+    "sum_n_mp": 39147888.11130655,
+    "sum_timer": 611064.0
+  },
+  "did_placebo": {
+    "rader": 648,
+    "sum_kwh": 35554800845.936005,
+    "sum_log_y": 4383.571367420804,
+    "sum_n_mp": 30308043.111306544,
+    "sum_timer": 473688.0
+  },
+  "maks_abs_avvik_koef_mot_avrundet_maal": 3.1480439541056726e-05,
+  "maks_abs_avvik_se_mot_avrundet_maal": 2.332571571172365e-05,
+  "panel": {
+    "kommuner": 197,
+    "maaneder": 51,
+    "rader": 10047,
+    "sum_egd": 3393649.1882953285,
+    "sum_kwh": 125341793604.588,
+    "sum_log_kwh": 155686.76642754913,
+    "sum_n_mp": 113828649.28250727,
+    "sum_spot_ore_kwh": 1021054.6794937702
+  },
+  "panel_placebo": {
+    "rader": 8668,
+    "sum_egd": 2738887.627997856,
+    "sum_kwh": 102145351500.086,
+    "sum_log_kwh": 133815.27259953282,
+    "sum_n_mp": 97888872.43653983,
+    "sum_spot_ore_kwh": 881282.7869349397
+  }
+}

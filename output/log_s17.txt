@@ -1,0 +1,32 @@
+SSB-tabell brukt: 14091 (Elektrisitetsbalanse, MWh, månedlig).
+12824 er avsluttet t.o.m. 2023M12 (bekreftet metadata-kall) – 14091 er videreføringen.
+Rådata lagret: C:\Users\JakobEiksundSæthre\Desktop\NRK\data\raw\ssb_12824_elbalanse.json
+Oppdatert (SSB, tabell 14091): 2026-08-14T06:00:00Z
+Månedlig tabell skrevet: C:\Users\JakobEiksundSæthre\Desktop\NRK\output\tab_nettoeksport.csv (67 måneder, 2021-01 - 2026-07)
+
+Jan-jun sum per år (GWh):
+ aar  nettoeksport_gwh  bruttoforbruk_gwh  produksjon_gwh  husholdningsforbruk_gwh  n_maneder
+2021            7473.2            74113.5         81586.8                  24456.8          6
+2022            6722.6            69325.2         76047.6                  20706.6          6
+2023            7775.6            68904.4         76680.0                  20950.7          6
+2024            7653.0            72255.4         79908.4                  22518.7          6
+2025           11931.2            71784.6         83715.9                  21995.0          6
+2026            1763.1            75574.0         77337.0                  24370.0          6
+
+Endring jan-jun 2026 vs 2025:
+  nettoeksport_gwh: 2025=11931  2026=1763  diff=-10168 GWh (-85.2 %)
+  produksjon_gwh: 2025=83716  2026=77337  diff=-6379 GWh (-7.6 %)
+  bruttoforbruk_gwh: 2025=71785  2026=75574  diff=+3789 GWh (+5.3 %)
+
+Sammenlignet mot tab_p1_forbruk_jan_jun.csv (Elhub husholdning+hytter NO1+NO2+NO5, jan-jun):
+ aar  Hus+hytter  endring_hus_hytter_gwh
+2021    18074.58                     NaN
+2022    14665.66                -3408.92
+2023    14882.04                  216.39
+2024    16485.27                 1603.23
+2025    15795.73                 -689.54
+2026    18118.86                 2323.12
+
+NRK-sitater bekreftet ordrett mot kildefil.
+
+Rapport skrevet: C:\Users\JakobEiksundSæthre\Desktop\NRK\output\tab_nettoeksport.md

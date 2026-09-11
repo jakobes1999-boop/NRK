@@ -1,0 +1,143 @@
+Hvor mye av strømforbruket
+er knyttet til Norgespris?
+Gå til https://elhub.no/stromkunde/norgespris for mer statistikk om Norgespris
+Les mer om estimert årsforbruk på https://dok.elhub.no/e27/utregning-av-antatt-arsvolum 
+Etter snart fire måneder med strømstøtteordningen Norgespris er om lag
+1,4 millioner strømmålere i husholdninger og fritidsboliger registrert i
+ordningen. Elhubs statistikk er nå utvidet til også å omfatte andel av
+strømforbruket og forbruksgrupper. 
+Hvor stor andel av strømforbruketomfattes av Norgespris
+I Sør-Norge (NO1, NO2 og NO5) er 60 %
+av husholdningenes strømmålere
+registrert med Norgespris, og disse sto
+20. januar for over 70 % av
+husholdningenes strømforbruk.
+For fritidsboliger er andelen enda
+høyere, 74 % av strømmålerne har
+Norgespris. Den 20. januar sto de for
+om lag 80 % av fritidsboligenes
+strømforbruk.
+70%
+80%
+Av husholdningenesstrømforbruk
+Av fritidsboligenesstrømforbruk
+I Midt- og Nord-Norge (NO3 og NO4) er omfanget fortsatt begrenset, med
+færre enn 14 000 strømmålere tilknyttet Norgespris, og disse sto 20.
+januar for under 2,5 % av husholdningenes strømforbruk.
+Størstedelen av strømforbruket i Sør-Norge er knyttet til Norgespris
+S t r ø m f o r b r u k e t  p å  N o r g e s p r i s  i  M i d t -  o g  N o r d - N o r g e  e r  f o r t s a t t  l a v t
+
+Gå til https://elhub.no/stromkunde/norgespris for mer statistikk om Norgespris
+Les mer om estimert årsforbruk på https://dok.elhub.no/e27/utregning-av-antatt-arsvolum 
+Når vi ser på antall strømmålere som har valgt Norgespris fordelt på
+forbruksgrupper ser vi store forskjeller. Forbruksgruppene er basert på
+estimert årsforbruk. Dette estimatet bygger på historiske måleverdier og
+beregnes enten av Elhub eller fastsettes av det lokale nettselskapet.
+Oppsummert så ser vi at i Sør-Norge har ca. 77 % av husholdningene igruppen med høyt estimert årsforbruk (over 16 000 kWh) valgtNorgespris. Tilsvarende andeler er 62 % i mellomgruppen og 42 % igruppen med lavt forbruk.  
+For fritidsboliger er andelen som har valgt Norgespris enda høyere. I gruppene med høyt og middels estimert årsforbruk har henholdsvis 82 %og 81 % valgt ordningen, mens andelen i lavforbruksgruppen er 51 %.
+HusholdningLav: mindre enn 8000 kWhMedium: 8000 - 16 000 kWhHøy: over 16 000 kWh 
+FritidsboligLav: mindre enn 3000 kWhMedium: 3000 - 7000 kWhHøy: over 7000 kWh 
+Hvordan fordeler Norgespris seg etterestimert årsforbruk?
+
+Gå til https://elhub.no/stromkunde/norgespris for mer statistikk om Norgespris
+*Sør-Norge inkluderer prisområdene NO1, NO2 og NO5 
+Husholdninger i Sør-Norge: Fordelingetter estimert årsforbruk
+Med Norgespris
+59.7%
+Uten Norgespris
+40.3%
+Uten Norgespris
+58.3%
+Med Norgespris
+41.7%
+Med Norgespris
+61.9%
+Uten Norgespris
+38.1%
+Med Norgespris
+77%
+Uten Norgespris
+23%
+Tallene viser en tydelig sammenheng mellom forbruksgruppe og valg av
+ordning. I Sør-Norge har nærmere 77 % av husholdningene i gruppen med
+høyt årsforbruk (over 16 000 kWh) valgt Norgespris. Tilsvarende er
+andelen 62 % i mellomgruppen og 42 % i gruppen med lavt forbruk.
+Forbruksgruppe - medium Forbruksgruppe - høy
+Totalt Forbruksgruppe - lav
+
+Gå til https://elhub.no/stromkunde/norgespris for mer statistikk om Norgespris
+*Sør-Norge inkluderer prisområdene NO1, NO2 og NO5 
+Fritidsbolig i Sør-Norge: Fordeling etterestimert årsforbruk
+Blant fritidsboligene i Sør-Norge ser vi en høy andel som har valgt
+Norgespris. I gruppen med høyt estimert årsforbruk (over 7 000 kWh)
+har 82 % valgt Norgespris. Tilsvarende andeler er 81 % i mellomgruppen
+og 51 % i gruppen med lavt forbruk.
+Med Norgespris
+51.3%
+Uten Norgespris
+48.7%
+Med Norgespris
+81.4%
+Uten Norgespris
+18.6%
+Med Norgespris
+82.4%
+Uten Norgespris
+17.6%
+Forbruksgruppe - medium Forbruksgruppe - høy
+Totalt Forbruksgruppe - lav
+Med Norgespris
+73.7%
+Uten Norgespris
+26.3%
+
+Gjennomsnittsforbruk medNorgespris (kWh)
+Visualiseringen er hentet fra PowerBI rapport på https://elhub.no/stromkunde/norgespris og
+datagrunnlaget finnes på https://api.elhub.no/energy-data-api
+Gjennomsnittsforbruk i husholdninger iSør-Norge 
+Ser vi på gjennomsnittsforbruket i de ulike gruppene, fremstår nivåene
+som relativt like. De minste forskjellene finner vi i gruppen med høyt
+strømforbruk. Figuren viser utviklingen over tid fra 1. oktober 2025 til og
+med 18. januar 2026.
+Forbruksgruppe - Høy
+Over hele perioden er
+gjennomsnittlig daglig
+forbruk 93 kWh for
+målere med Norgespris,
+mot 87,2 kWh for
+målere uten – en
+forskjell på 5,8 kWh per
+dag.
+Forbruksgruppe - Medium
+Over hele perioden er
+gjennomsnittlig daglig
+forbruk 44,8 kWh for
+målere med Norgespris,
+mot 39,0 kWh for målere
+uten – en forskjell på 5,8
+kWh per dag.
+Forbruksgruppe - Lav
+Over hele perioden er
+gjennomsnittlig daglig
+forbruk 18,1 kWh for
+målere med Norgespris,
+mot 14,1 kWh for
+målere uten – en
+forskjell på 4,0 kWh per
+dag.
+Gjennomsnittsforbruk utenNorgespris (kWh)
+
+Forbehold
+Tallene som presenteres er basert på avregnede måledata fra
+Elhub og gjenspeiler situasjonen slik den var på
+publiseringstidspunktet. Selv om det ikke forventes vesentlige
+endringer, kan enkelte tall og statistikker bli justert i ettertid som
+følge av etterrapportering eller korrigeringer.
+Alle tidsserier er basert på direkte målte verdier og er ikke
+korrigert for eksterne forhold, for eksempel temperatur.
+Det tas forbehold om at feil eller unøyaktigheter kan forekomme 
+i datamaterialet.
+Tallgrunnlag og visualisering
+For mer innsikt, tall og statistikk om det norske kraftmarkedet,
+besøk vår API-portal eller se mer på https://elhub.no/data-og-
+innsikt/

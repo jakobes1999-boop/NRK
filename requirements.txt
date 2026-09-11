@@ -1,0 +1,7 @@
+pandas>=2.1
+numpy
+pyarrow
+requests
+statsmodels>=0.14
+linearmodels>=6.0
+matplotlib

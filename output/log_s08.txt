@@ -1,0 +1,77 @@
+C:\Users\JakobEiksundSæthre\Desktop\NRK\src\s08_did_orderstatus.py:66: SingularMatrixWarning: The design matrix is rank-deficient. The model parameters are not uniquely determined.
+  r = smf.wls(formula, data=m, weights=m.n_mp).fit(cov_type="cluster", cov_kwds={"groups": m.g})
+C:\Users\JakobEiksundSæthre\Desktop\NRK\src\s08_did_orderstatus.py:66: SingularMatrixWarning: The design matrix is rank-deficient. The model parameters are not uniquely determined.
+  r = smf.wls(formula, data=m, weights=m.n_mp).fit(cov_type="cluster", cov_kwds={"groups": m.g})
+C:\Users\JakobEiksundSæthre\Desktop\NRK\src\s08_did_orderstatus.py:98: SingularMatrixWarning: The design matrix is rank-deficient. The model parameters are not uniquely determined.
+  es = smf.wls("log_y ~ " + " + ".join(ev_cols) + " + C(g) + C(pa_t)", data=m, weights=m.n_mp).fit(
+Status: ['Bestilt sent', 'Bestilt tidlig', 'Ikke bestilt'] | EAC: ['Husholdning Høy', 'Husholdning Lav', 'Husholdning Medium'] | områder: ['NO1', 'NO2', 'NO5']
+837 gruppe-måneder, 2023-10–2026-04
+
+kWh per målepunkt og måned før okt. 2025:
+ status  Bestilt sent  Bestilt tidlig  Ikke bestilt  bestilt_alle  forskjell_pst
+pa                                                                             
+NO1           1256.3          1387.1         821.1        1329.5           61.9
+NO2           1220.4          1347.6         927.1        1300.7           40.3
+NO5           1279.3          1372.4         941.5        1319.5           40.1
+
+Innen EAC-gruppe:
+ status                  Bestilt sent  Bestilt tidlig  Ikke bestilt
+pa  eac                                                           
+NO1 Husholdning Høy           2041.1          2073.3        1985.5
+    Husholdning Lav            411.0           416.1         360.2
+    Husholdning Medium         993.5          1005.6         969.7
+NO2 Husholdning Høy           1854.9          1887.2        1835.0
+    Husholdning Lav            449.1           443.8         420.4
+    Husholdning Medium         976.4           992.5         957.3
+NO5 Husholdning Høy           1927.7          1951.3        1878.4
+    Husholdning Lav            426.1           436.1         399.7
+    Husholdning Medium         976.5           984.7         953.5
+
+Målepunkt 2026-04:
+ status  Bestilt sent  Bestilt tidlig  Ikke bestilt
+pa                                                
+NO1         187147.0        237907.0      243356.0
+NO2         123987.0        212890.0       97341.0
+NO5          55972.0         42518.0       61717.0
+
+Diff-in-diff:
+  Bestilt (alle) vs ikke                 bestilt:post   β=0.0589 (se 0.0281, p=0.0357) → +6.1 %
+  Tidlig / sent vs ikke                  tidlig:post    β=0.0615 (se 0.0289, p=0.0336) → +6.3 %
+  Tidlig / sent vs ikke                  sent:post      β=0.0556 (se 0.0293, p=0.0577) → +5.7 %
+  NO1: β=0.0695 (se 0.0461) → +7.2 %
+  NO2: β=0.0447 (se 0.0292) → +4.6 %
+  NO5: β=0.0439 (se 0.0256) → +4.5 %
+
+Event-study: snitt pre-koeff = 0.0003 (sd 0.0234); snitt post = 0.0592
+  maned    koef     se     pst
+2023-10  0.0063 0.0279  0.6324
+2023-11  0.0145 0.0384  1.4613
+2023-12  0.0295 0.0458  2.9936
+2024-01  0.0258 0.0476  2.6167
+2024-02  0.0156 0.0461  1.5724
+2024-03  0.0019 0.0415  0.1855
+2024-04  0.0047 0.0348  0.4669
+2024-05 -0.0272 0.0133 -2.6800
+2024-06 -0.0242 0.0172 -2.3950
+2024-07 -0.0532 0.0302 -5.1834
+2024-08 -0.0240 0.0235 -2.3761
+2024-09 -0.0144 0.0080 -1.4268
+2024-10  0.0005 0.0236  0.0546
+2024-11  0.0193 0.0380  1.9498
+2024-12  0.0300 0.0440  3.0502
+2025-01  0.0314 0.0472  3.1853
+2025-02  0.0245 0.0492  2.4832
+2025-03  0.0148 0.0414  1.4906
+2025-04  0.0038 0.0290  0.3818
+2025-05 -0.0021 0.0101 -0.2075
+2025-06 -0.0124 0.0087 -1.2325
+2025-07 -0.0478 0.0314 -4.6660
+2025-08 -0.0096 0.0165 -0.9546
+2025-09  0.0000 0.0000  0.0000
+2025-10  0.0304 0.0306  3.0855
+2025-11  0.0498 0.0424  5.1090
+2025-12  0.0668 0.0478  6.9051
+2026-01  0.0801 0.0541  8.3373
+2026-02  0.0753 0.0553  7.8260
+2026-03  0.0599 0.0470  6.1735
+2026-04  0.0524 0.0389  5.3753

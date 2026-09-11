@@ -1,0 +1,88 @@
+== Bygger effektiv marginalpris per prisområde × måned ==
+Kontroll mot panel.spot_ore_kwh: 153 område-måneder, snitt |diff| = 0.000 øre/kWh, maks |diff| = 0.000 øre/kWh
+Skrevet 165 rader til data/processed/effektiv_pris_pa_maned.parquet og output/tab_effektiv_pris.csv
+
+Vintermåneder (des-feb), snitt over NO1/NO2/NO5, øre/kWh eks. mva:
+ vinter    spot  p_eff   diff  diff_pst  n_omrade_maneder
+2021/22 145.402 93.955 51.446    35.382                 9
+2022/23 169.773 79.977 89.796    52.892                 9
+2023/24  83.125 67.475 15.649    18.827                 9
+2024/25  76.102 56.908 19.194    25.222                 9
+2025/26 108.988 78.550 30.438    27.928                 9
+
+== Kobler p_eff på kommunepanelet og estimerer ==
+   post_np: se kluster 0.0069 vs Driscoll-Kraay 0.0175 (p=0.000)
+
+== M1 s07-spesifikasjon, spot i nivå ==  N=10047  R²(within)=0.941  R²(overall)=0.132
+                        koef       se        p stjerner
+egd                  0.00188  0.00002  0.00000      ***
+spot_ore_kwh        -0.00037  0.00002  0.00000      ***
+innt_1000            0.00090  0.00005  0.00000      ***
+snitt_bruksareal_m2 -0.00093  0.00078  0.23076         
+post_np              0.09503  0.00692  0.00000      ***
+   post_np: se kluster 0.0072 vs Driscoll-Kraay 0.0156 (p=0.000)
+
+== M1e s07-spesifikasjon, p_eff i nivå ==  N=10047  R²(within)=0.940  R²(overall)=0.151
+                        koef       se        p stjerner
+egd                  0.00189  0.00002  0.00000      ***
+p_eff               -0.00074  0.00008  0.00000      ***
+innt_1000            0.00116  0.00005  0.00000      ***
+snitt_bruksareal_m2 -0.00096  0.00087  0.26615         
+post_np              0.09398  0.00718  0.00000      ***
+   post_np: se kluster 0.0070 vs Driscoll-Kraay 0.0157 (p=0.000)
+
+== M2 s07-spesifikasjon, spot i nivå ==  N=10047  R²(within)=0.962  R²(overall)=0.072
+                        koef       se        p stjerner
+egd                  0.00111  0.00003  0.00000      ***
+spot_ore_kwh        -0.00024  0.00002  0.00000      ***
+innt_1000            0.00101  0.00005  0.00000      ***
+snitt_bruksareal_m2 -0.00169  0.00074  0.02326        *
+post_np              0.07166  0.00701  0.00000      ***
+   post_np: se kluster 0.0074 vs Driscoll-Kraay 0.0171 (p=0.000)
+
+== M2e s07-spesifikasjon, p_eff i nivå ==  N=10047  R²(within)=0.962  R²(overall)=0.081
+                        koef       se       p stjerner
+egd                  0.00110  0.00003  0.0000      ***
+p_eff               -0.00054  0.00007  0.0000      ***
+innt_1000            0.00116  0.00005  0.0000      ***
+snitt_bruksareal_m2 -0.00170  0.00075  0.0242        *
+post_np              0.07134  0.00737  0.0000      ***
+   post_np: se kluster 0.0071 vs Driscoll-Kraay 0.0170 (p=0.000)
+
+== M1 sammenligning, log(spot) ==  N=10047  R²(within)=0.940  R²(overall)=0.925
+             koef       se    p stjerner
+egd       0.00189  0.00002  0.0      ***
+log_spot -0.01746  0.00189  0.0      ***
+log_innt  0.81032  0.02810  0.0      ***
+post_np   0.08723  0.00707  0.0      ***
+   post_np: se kluster 0.0070 vs Driscoll-Kraay 0.0161 (p=0.000)
+
+== M1e NRK-lik med log(p_eff) ==  N=10047  R²(within)=0.939  R²(overall)=0.963
+              koef       se    p stjerner
+egd        0.00188  0.00002  0.0      ***
+log_p_eff -0.01315  0.00197  0.0      ***
+log_innt   0.90804  0.02503  0.0      ***
+post_np    0.08313  0.00703  0.0      ***
+   post_np: se kluster 0.0070 vs Driscoll-Kraay 0.0168 (p=0.000)
+
+== M2 sammenligning, log(spot) + kalendermåned ==  N=10047  R²(within)=0.962  R²(overall)=0.893
+             koef       se    p stjerner
+egd       0.00110  0.00003  0.0      ***
+log_spot -0.01461  0.00161  0.0      ***
+log_innt  0.77949  0.02643  0.0      ***
+post_np   0.06670  0.00703  0.0      ***
+   post_np: se kluster 0.0069 vs Driscoll-Kraay 0.0163 (p=0.000)
+
+== M2e + kalendermåned, log(p_eff) ==  N=10047  R²(within)=0.962  R²(overall)=0.927
+              koef       se    p stjerner
+egd        0.00109  0.00003  0.0      ***
+log_p_eff -0.01438  0.00168  0.0      ***
+log_innt   0.84805  0.02393  0.0      ***
+post_np    0.06405  0.00694  0.0      ***
+  F2e + log(p_eff) [3 prisområder – svak identifikasjon, se merknad] share_post       β=  0.0842 (se 0.0688, p=0.2210)
+  F2e + log(p_eff) [3 prisområder – svak identifikasjon, se merknad] log_p_eff        β= -0.0119 (se 0.0015, p=0.0000)
+  F2e: log_p_eff identifiseres kun av variasjon MELLOM NO1/NO2/NO5 innen hver kalendermåned (3 grupper) – flagges.
+  Prisgap: np_andel_hh x (log p_eff - log 40)          gap_x            β=  0.1014 (se 0.0791, p=0.1998)
+  Prisgap-modell: implisert egenpriselastisitet (np_andel_hh=1) = -0.1014; snittgap post 0.624; D7-implisert -0.048
+
+Skrevet output/tab_effektiv_pris.md og output/tab_effektiv_pris_modeller.csv

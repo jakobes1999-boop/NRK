@@ -1,0 +1,20 @@
+{
+  "aggregert_eksakt_prosent_mot_kontrafaktisk": 2.3261932986451983,
+  "aggregert_full_dose_prosent_mekanisk": 2.7222285654375384,
+  "aggregert_prosjektapproksimasjon_prosent": 2.3422643906265033,
+  "andel_bestilt_av_postforbruk": 0.7722244035684231,
+  "bestillereffekt_full_dose_prosent_mekanisk": 3.5251781125514956,
+  "dose_enkelt_snitt_21_omraademaaneder": 0.7077142359165196,
+  "dose_sent_kwh_vektet": 0.7343124044497824,
+  "dose_sent_n_mp_vektet": 0.7134688413655778,
+  "effekt_mot_spot_beta_log_mekanisk": 0.043348067860134384,
+  "effekt_mot_spot_prosent_mekanisk": 4.430131932430676,
+  "forbruksvekt_sent_blant_bestillere": 0.40306248146705376,
+  "forbruksvekt_tidlig_blant_bestillere": 0.5969375185329462,
+  "mekanisk_elastisitet": -0.04799944267220082,
+  "prisgap_spot_log_n_mp_vektet": 0.9030952329211042,
+  "prisgap_stotte_log_n_mp_vektet": 0.6225175162047998,
+  "sent_full_dose_beta_log_mekanisk": 0.04010010676439126,
+  "sent_full_dose_prosent_mekanisk": 4.091497160668217,
+  "sent_observert_prosent": 2.902337900143396
+}

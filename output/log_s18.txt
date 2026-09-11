@@ -1,0 +1,14 @@
+egd18 bygget: 1.000 av radene har verdi; korr(egd17, egd18) = 0.9999
+Panel: 197 kommuner, 2022-02-2026-04, 10047 rader
+pa_kilde: {'fylke=nve': 126, 'fylke': 59, 'nve': 10, 'unntak': 2}
+Hovedrutenett: 672 kjernemodeller (76 s)
+Nivåmodeller: 56
+Base 18-modeller: 56
+784 kjernemodeller -> 6384 rader i tab_nrk_spes_sok.csv
+Ferdig på 91 s. Topp 5:
+                   y   np_variabel tids_fe innt_enhet   spot_enhet  vekting     b_egd  b_spot_enhet      b_np  b_innt_enhet r2_variant   avstand
+0  log_kwh_per_maler  post_okt2025   ingen   10000_kr  ore_per_kwh     n_mp  0.001873     -0.000349  0.075331      0.003169  r2_within  0.744966
+1  log_kwh_per_maler  post_okt2025   ingen   10000_kr  ore_per_kwh     n_mp  0.001873     -0.000349  0.075507      0.003199  r2_within  0.755561
+2  log_kwh_per_maler  post_okt2025   ingen   10000_kr  ore_per_kwh     n_mp  0.001865     -0.000346  0.074333      0.003379  r2_within  0.853594
+3  log_kwh_per_maler  post_okt2025   ingen   10000_kr  ore_per_kwh     n_mp  0.001865     -0.000346  0.074558      0.003399  r2_within  0.858863
+4            log_kwh  post_sep2025   ingen    1000_kr  ore_per_kwh  uvektet  0.001901     -0.000363  0.079964      0.000955  r2_within  0.906619

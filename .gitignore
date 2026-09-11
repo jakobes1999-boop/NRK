@@ -1,0 +1,25 @@
+# hemmeligheter
+.env
+# store rådata (lastes ned av s01–s04; se README)
+data/raw/consumption_per_group_municipality_hour.csv.gz
+data/raw/consumption_per_norgespris_order_status*.csv
+data/raw/ssb_*.json
+data/raw/klass_*.json
+data/raw/frost_sources.parquet
+data/raw/frost_done_sources.txt
+data/raw/log_*.txt
+# tredjeparts opphavsrettslig materiale (lenker i README/kilder)
+kilder/nrk_prisen_for_billig_strom.pdf
+kilder/nrk_prisen_for_billig_strom.md
+kilder/elhub_analyse_forbruk_norgespris_2026-01.pdf
+kilder/*.html
+# personlige utkast
+*.docx
+~$*
+notat/DEBATTINNLEGG_*.md
+notat/utkast_notat_jas_*.md
+# diverse
+__pycache__/
+.venv/
+*.pyc
+data/raw/vg/

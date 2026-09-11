@@ -1,0 +1,5 @@
+relativ_sti,bytes,sha256,rader,kolonner,dato_min,dato_maks
+data/processed/did_month.parquet,34743,9d73e3078966b087eb6c70fbbaf2b4685deece7a7f828264b25f13d630fa89a6,837.0,15.0,2023-10,2026-04
+data/processed/panel.parquet,687819,342eecf3c2db3105a15c82123161be33b1d2e873e19e4ceecabcaf87b48ac5ab,10047.0,31.0,2022-02,2026-04
+data/processed/elhub_np_mba_daily.parquet,38225,80374e6fcfe95a9b94cdfeb83df65cb3a1e6affccb2b738c67c709b9bbd9d4ff,3370.0,5.0,2025-10-01,2026-09-02
+output/TIL_GODKJENNING.md,67316,2372bd8baadd53cbdeae5b4c97c0752dec2068932d4171a3dbe8cac3a43ccfbf,,,,

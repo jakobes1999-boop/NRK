@@ -1,0 +1,82 @@
+{
+  "celler_pa_t_eac": 279,
+  "enkelt_snitt_minus_OLS": -1.2215922717828676e-14,
+  "enkelt_snitt_minus_WLS": -0.00022986351006770017,
+  "forprofil_observasjoner_per_eac_mnd_maks": 12,
+  "forprofil_observasjoner_per_eac_mnd_min": 12,
+  "fwl_avvik": -7.28583859910259e-17,
+  "fwl_beta": 0.02988049383151306,
+  "fwl_informasjonsvekt_etter": 0.6666668166997984,
+  "fwl_informasjonsvekt_for": 0.33333318330020145,
+  "fwl_nevner": 1138111.5999340245,
+  "fwl_restvariasjon_andel": 0.18896257927124788,
+  "manuelle_kontraster": {
+    "enkelt_snitt": 0.029650630321445434,
+    "harmonisk_vektet": 0.02940905824001802,
+    "n_mp_vektet": 0.028481034783303327
+  },
+  "modell_beta": 0.029880493831513134,
+  "n_mp_cv": 0.6779611839553684,
+  "n_mp_forhold_maks_min": 17.578257306746792,
+  "n_mp_maks": 128708.0,
+  "n_mp_min": 7322.0,
+  "profil_leverage_etter": 6.322578031293156,
+  "profil_leverage_etter_andel": 0.1915932736755501,
+  "profil_leverage_for": 26.677421968706856,
+  "profilkolonner_rå": 36,
+  "profilrang_inkrementell": 33,
+  "profilredundanser_utover_basis": 3,
+  "rader_per_celle_maks": 3,
+  "rader_per_celle_min": 3,
+  "rang": [
+    {
+      "kolonner": 305,
+      "navn": "basis",
+      "nullitet": 8,
+      "rader": 837,
+      "rang": 297,
+      "residual_df": 540
+    },
+    {
+      "kolonner": 341,
+      "navn": "basis_og_profil",
+      "nullitet": 11,
+      "rader": 837,
+      "rang": 330,
+      "residual_df": 507
+    },
+    {
+      "kolonner": 342,
+      "navn": "full_D7",
+      "nullitet": 11,
+      "rader": 837,
+      "rang": 331,
+      "residual_df": 506
+    },
+    {
+      "kolonner": 242,
+      "navn": "placebo_basis",
+      "nullitet": 8,
+      "rader": 648,
+      "rang": 234,
+      "residual_df": 414
+    },
+    {
+      "kolonner": 278,
+      "navn": "placebo_basis_og_profil",
+      "nullitet": 11,
+      "rader": 648,
+      "rang": 267,
+      "residual_df": 381
+    },
+    {
+      "kolonner": 279,
+      "navn": "placebo_full_D7",
+      "nullitet": 11,
+      "rader": 648,
+      "rang": 268,
+      "residual_df": 380
+    }
+  ],
+  "rangtap_basis": 8
+}
