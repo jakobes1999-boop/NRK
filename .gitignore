@@ -23,3 +23,4 @@ __pycache__/
 .venv/
 *.pyc
 data/raw/vg/
+notat/utkast_notat_nrk_*.md
