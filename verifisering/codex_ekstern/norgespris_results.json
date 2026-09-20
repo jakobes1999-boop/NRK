@@ -1,0 +1,82 @@
+{
+  "sample": {
+    "rows_hourly_primary": 407376,
+    "start": "2023-10-01",
+    "end": "2026-04-30",
+    "strata": 9,
+    "post_days": 212
+  },
+  "matched_did": {
+    "log_points": 0.032283063926557304,
+    "percent": 3.2809815133641376,
+    "ci_log_low": 0.02538323196339048,
+    "ci_log_high": 0.04044006156158348,
+    "ci_percent_low": 2.57081293531239,
+    "ci_percent_high": 4.126889580045426
+  },
+  "placebo_2024": {
+    "log_points": -0.004943291732395282,
+    "percent": -0.49310937734530474,
+    "ci_log_low": -0.009256349950578547,
+    "ci_log_high": -0.0004560416141921391,
+    "ci_percent_low": -0.9213641818761967,
+    "ci_percent_high": -0.045593764302086254
+  },
+  "trend_adjusted_ddd": {
+    "log_points": 0.03722635565895259,
+    "percent": 3.7927935111763977,
+    "ci_log_low": 0.029168660940751476,
+    "ci_log_high": 0.04628993164004406,
+    "ci_percent_low": 2.9598232838260925,
+    "ci_percent_high": 4.7378034971131395
+  },
+  "flexible_load_adjusted": {
+    "log_points": 0.02969153977425328,
+    "percent": 3.0136728733006724,
+    "ci_log_low": 0.023182090931859186,
+    "ci_log_high": 0.0386553258454024,
+    "ci_percent_low": 2.345288407025299,
+    "ci_percent_high": 3.9412163393143387
+  },
+  "flexible_load_placebo_2024": {
+    "log_points": 0.0022065535888497793,
+    "percent": 0.22089898197818406,
+    "ci_log_low": -0.001308633433539682,
+    "ci_log_high": 0.005801576034080067,
+    "ci_percent_low": -0.13077775461963018,
+    "ci_percent_high": 0.5818437768760598
+  },
+  "flexible_load_bias_adjusted": {
+    "log_points": 0.0274849861854035,
+    "percent": 2.786618279910548,
+    "ci_log_low": 0.01982791743755725,
+    "ci_log_high": 0.0372156643852615,
+    "ci_percent_low": 2.0025796270399376,
+    "ci_percent_high": 3.7916838399457164
+  },
+  "volume_matched_did": {
+    "observed_early_gwh": 6200.092632206,
+    "effect_gwh": 196.96161877374146,
+    "effect_kwh_per_treated_meter": 399.2613619568459,
+    "treated_meters": 493315.0
+  },
+  "volume_trend_adjusted_ddd": {
+    "observed_early_gwh": 6200.092632206,
+    "effect_gwh": 226.5636207353001,
+    "effect_kwh_per_treated_meter": 459.26764995043754,
+    "treated_meters": 493315.0
+  },
+  "volume_flexible_load_adjusted": {
+    "observed_early_gwh": 6200.092632206,
+    "effect_gwh": 168.08891814101838,
+    "effect_kwh_per_treated_meter": 340.73344240701863,
+    "treated_meters": 493315.0
+  },
+  "notes": [
+    "Primary comparison excludes late adopters.",
+    "Matched DiD compares Oct 2025-Apr 2026 with identical calendar dates one year earlier.",
+    "Trend-adjusted DDD subtracts the corresponding Oct 2024-Apr 2025 placebo change.",
+    "Intervals use a two-way bootstrap over the nine strata and calendar-week blocks.",
+    "Flexible load adjustment predicts the early-vs-control gap using only pre-policy data, with stratum-specific seasonality, weekday effects, and a cubic function of control-cohort load."
+  ]
+}

@@ -97,3 +97,8 @@ Ikke mulig med dagens data (må bestilles): kohortens faktiske inntredelsesforl�
 ## 13.09.2026 – Excel for ettergåing
 
 - src/s19_excel_ettergaaing.py → output/NRK_etterproving_beregninger.xlsx (12 ark, levende formler). M1/M5 som within-transformasjon + LINEST (koeffisienter identiske med PanelOLS: 0,095031 / 0,050908; LINEST-SE er ikke klustret). D7 som gjennomsiktig kontrast: uvektet snitt 0,029651 = uvektet OLS-D7 (avvik 1e-14); n_mp-vektet snitt 0,02848 mot WLS 0,02988 (forventet avvik, FWL); placebo-kontrast −0,0010. Dose, forbruk jan.–jun. (18 119 GWh 2026), forbruksandel 0,772. Excel ikke rekalkulert lokalt (ingen Excel/LibreOffice headless; COM forbudt) – kontroll via Python-kolonner i arket. Tall til godkjenning.
+
+## 20.09.2026 – vurdering av Codex' egne beregninger
+
+- Mottatt norgespris_analyse_komplett.zip (Codex, uavhengig av repoet). Filer lagt i verifisering/codex_ekstern/ (uten avkortet 12 MB kohort-CSV som bare dekker 2023-10–2024-04, og uten pris-/temperaturserier som skriptet henter selv). Vurdering: notat/VURDERING_codex_zip_2026-09-20.md.
+- Codex: matchet DiD 3,28, fleksibel 3,01, foretrukket 2,79 (fleksibel minus placebo), timebasert prisfordel-test (helning 6,4 pp per kr/kWh mot placebo). Gjenregnet fra did_month: DiD 0,0327 (Codex 0,0323), placebo −0,0053 (−0,0049), månedlig event-study, 493 315 målere og 6 200 GWh identisk. Anbefaling: behold D7 3,0; kjør timetesten selv på fulle data; ikke bruk trendjustert 3,8.
