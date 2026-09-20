@@ -1,0 +1,78 @@
+{
+  "main_model": {
+    "actual": {
+      "slope_log_per_nok_kwh": 0.05090040843368719,
+      "slope_percent_per_nok_kwh": 5.090040843368719,
+      "weighted_mean_residual_log": 0.029501060306032775,
+      "weighted_mean_residual_percent": 2.99405275234675,
+      "weighted_mean_wedge": 0.3486007010007579,
+      "weighted_mean_temperature": 2.095359835024678,
+      "n_hour_strata": 45792,
+      "n_hours": 5088,
+      "n_strata": 9,
+      "r2": 0.28967174950604424
+    },
+    "placebo": {
+      "slope_log_per_nok_kwh": -0.013210389831693228,
+      "slope_percent_per_nok_kwh": -1.3210389831693228,
+      "weighted_mean_residual_log": 0.0017598816776075168,
+      "weighted_mean_residual_percent": 0.1761431178213024,
+      "weighted_mean_wedge": 0.13284053277157673,
+      "weighted_mean_temperature": 2.899104077687837,
+      "n_hour_strata": 45786,
+      "n_hours": 5088,
+      "n_strata": 9,
+      "r2": 0.06753496736250408
+    },
+    "slope_difference_log_per_nok_kwh": 0.06411079826538042,
+    "slope_difference_percentage_points_per_nok_kwh": 6.411079826538042,
+    "slope_difference_ci_95_percentage_points_per_nok_kwh": [
+      5.264811126130895,
+      7.817256383136587
+    ],
+    "mean_level_difference_log": 0.027741178628425258,
+    "mean_level_difference_percent": 2.8129548082233384,
+    "mean_level_difference_ci_95_percent": [
+      2.349080207018629,
+      3.262160810595507
+    ],
+    "dose_component_at_actual_mean_wedge_percent": 2.2600680594998317
+  },
+  "temperature_only_robustness": {
+    "actual": {
+      "slope_log_per_nok_kwh": 0.05442786763207817,
+      "slope_percent_per_nok_kwh": 5.442786763207817,
+      "weighted_mean_residual_log": 0.029972696363346894,
+      "weighted_mean_residual_percent": 3.042639918142679,
+      "weighted_mean_wedge": 0.3486007010007579,
+      "weighted_mean_temperature": 2.095359835024678,
+      "n_hour_strata": 45792,
+      "n_hours": 5088,
+      "n_strata": 9,
+      "r2": 0.27928441144191174
+    },
+    "placebo": {
+      "slope_log_per_nok_kwh": -0.016574601676639784,
+      "slope_percent_per_nok_kwh": -1.6574601676639784,
+      "weighted_mean_residual_log": 0.00035240333771180426,
+      "weighted_mean_residual_percent": 0.035246543906271306,
+      "weighted_mean_wedge": 0.13284053277157673,
+      "weighted_mean_temperature": 2.899104077687837,
+      "n_hour_strata": 45786,
+      "n_hours": 5088,
+      "n_strata": 9,
+      "r2": 0.06859856246308482
+    },
+    "slope_difference_log_per_nok_kwh": 0.07100246930871795,
+    "slope_difference_percentage_points_per_nok_kwh": 7.100246930871795
+  },
+  "definitions": {
+    "outcome": "log(kWh per meter, early orderers) - log(kWh per meter, non-orderers), hourly",
+    "price_wedge": "effective marginal price under ordinary support minus NOK 0.40/kWh",
+    "temperature": "mean hourly 2m temperature across three points in each price area",
+    "calendar_controls": "stratum-specific hour-of-week and month-of-year fixed effects",
+    "weather_controls": "stratum-specific cubic heating-degree function (17 C base)",
+    "main_extra_control": "stratum-specific cubic log load among non-orderers",
+    "inference": "independent calendar-week block bootstrap for actual and placebo periods, 2000 draws"
+  }
+}

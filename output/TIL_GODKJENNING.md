@@ -692,3 +692,19 @@ Fallet i nettoeksport fra 2025 til 2026 (-10168 GWh) følger regnskapsmessig av 
 - Nettoeksport: gjort (s17, SSB 14091, hele landet). Fall 10 168 GWh mot forbruksøkning 2 323 GWh i Sør-Norge; produksjonsfall 6 379 GWh.
 - Må bestilles eksternt: kohortens inntredelsesforløp og døgnstart 1. oktober (Elhub), NRKs spesifikasjon (NRK). Se notat/SPORSMAL_ELHUB_NRK.md.
 - Panelet mangler 2021 (Elhubs kommunefil starter feb. 2022) og slutter apr. 2026 (NRK: juni 2026).
+## 20.09.2026 – timebasert test av prismekanismen (s20, Codex' design på fulle data)
+
+Gap = log kWh per måler tidlig bestilt minus ikke bestilt, per time og stratum (9). Førperiodemodell per stratum: time i uken, kalendermåned, kubisk oppvarmingsgrad (Open-Meteo, base 17), kubisk log last hos ikke-bestillere. Prediksjonsavvik i vinteren regressert på prisfordel = effektiv marginalpris med strømstøtte (terskel 73/75/77 øre eks. mva 2024/25/26, 90 prosent dekning) minus 40 øre.
+
+| Størrelse | Verdi |
+|---|---:|
+| Helning, vinter 2025/26, log-pp per kr/kWh | 5,09 |
+| Helning, placebovinter 2024/25 | −1,32 |
+| Differanse (uke-blokkbootstrap 95 %) | 6,41 (5,26–7,82) |
+| Differanse uten kontroll for ikke-bestillernes last | 7,10 |
+| Nivåeffekt, justert, minus placebo, prosent | 2,81 (2,35–3,26) |
+| Dosekomponent ved snittfordel 34,9 øre, prosent | 2,26 |
+| Observasjoner (time × stratum) | 45 792 / 45 786 |
+| Andel i intervallet 25–50 øre, vinter 2025/26 | 39 651 av 45 792 |
+
+Identisk med Codex' tall (verifisering/codex_ekstern/norgespris_hourly_results.json). Filer: output/tab_timetest_resultater.json, tab_timetest_prisfordel_bin.csv, fig_timetest_dose_respons.png, log_s20.txt.
