@@ -15,6 +15,12 @@
 3. Bestillernes eget avvik per kalendermåned og forbruksklasse, estimert på de to årene før ordningen. Bestillerne har et annet vintermønster enn ikke-bestillerne også uten Norgespris, og det skal heller ikke telle som effekt.
 4. Bestilt × måned fra og med oktober 2025. Koeffisienten på dette leddet er effekten: hvor mye bestillerne avviker fra sitt eget mønster etter at ordningen kom, ut over det som skjedde med ikke-bestillerne.
 
+**Spesifikasjonen.** Skrevet ut er modellen
+
+log y(g,t) = α(g) + λ(p,k,t) + γ(m,k)·B(g) + β·B(g)·P(t) + e(g,t)
+
+Her er g en av de 27 gruppene (prisområde p × bestillingsstatus × forbruksklasse k), t en måned fra oktober 2023 til april 2026 (31 måneder, 837 observasjoner), og y forbruk per måler i kWh. α(g) er leddet 1, λ(p,k,t) er leddet 2, γ(m,k) er leddet 3 for kalendermåned m, B(g) er 1 for grupper som bestilte Norgespris og 0 ellers, og P(t) er 1 fra og med oktober 2025. β er leddet 4, og effekten i prosent er exp(β) − 1. Modellen er estimert med vektet minste kvadraters metode med antall målere i gruppen som vekt. Standardfeilene er klustret på gruppe, og intervallet er regnet med wild cluster bootstrap (Rademacher-vekter, 999 trekk, invertert test). Sent bestillere har B(g) = 1 fra oktober 2025.
+
 Modellen er estimert med vektet minste kvadraters metode, med antall målere som vekt. Standardfeilene er klustret på gruppe. Med 27 klustre er vanlige intervaller for smale, så intervallet er regnet med wild cluster bootstrap. Resultatet er 3,0 prosent, med intervall 2,5 til 3,7.
 
 **Kontroller.** Flytter jeg innføringen til oktober 2024 og bruker bare data før oktober 2025, gir modellen mellom minus én og pluss én prosent. Månedsvise anslag før oktober 2025 ligger nær null, og effekten bygger seg opp gjennom vinteren fra 1,7 prosent i oktober til 4,8 i februar. Ingen enkelt gruppe driver resultatet. En uavhengig gjennomgang med et annet oppsett på samme data gir 2,8 til 3,3 prosent.
