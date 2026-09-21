@@ -708,3 +708,10 @@ Gap = log kWh per måler tidlig bestilt minus ikke bestilt, per time og stratum 
 | Andel i intervallet 25–50 øre, vinter 2025/26 | 39 651 av 45 792 |
 
 Identisk med Codex' tall (verifisering/codex_ekstern/norgespris_hourly_results.json). Filer: output/tab_timetest_resultater.json, tab_timetest_prisfordel_bin.csv, fig_timetest_dose_respons.png, log_s20.txt.
+
+## 21.09.2026 – magasin og utveksling (s21)
+
+Uke 37 2026: fyllingsgrad hele landet 64,3 prosent (median 82,5), NO2 46,9 (median 83,0, NVE-min 50,9), NO5 64,9, NO1 72,5. Avvik fra median: −16,0 TWh landet, −16,8 TWh Sør-Norge. Fall uke 37 2025→2026: −12,2 TWh landet, −9,1 Sør.
+Elbalanse jan–jul 2026 mot snitt 2021–2025 (SSB 14091, TWh): produksjon −3,0; import +4,0; eksport −3,7; nettoeksport −7,7 (2,7 mot 10,4); bruttoforbruk +4,7; husholdninger +2,4. Nettoimport feb–apr 2026. Statnett jan–aug: forbruk +6,2, produksjon −2,5.
+Husholdninger kalenderår: 42,8 TWh 2021, 40,4 TWh 2025 (SSB); Elhub okt 25–sep 26 under 2021 i alle områder.
+Kilder og filer: notat/MAGASIN_EKSPORT_2026-09-21.md, output/tab_magasin_eksport.md.
