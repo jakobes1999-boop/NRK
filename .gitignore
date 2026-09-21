@@ -24,3 +24,6 @@ __pycache__/
 *.pyc
 data/raw/vg/
 notat/utkast_notat_nrk_*.md
+
+# Hook-snapshots
+.claude/

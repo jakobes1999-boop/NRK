@@ -715,3 +715,7 @@ Uke 37 2026: fyllingsgrad hele landet 64,3 prosent (median 82,5), NO2 46,9 (medi
 Elbalanse jan–jul 2026 mot snitt 2021–2025 (SSB 14091, TWh): produksjon −3,0; import +4,0; eksport −3,7; nettoeksport −7,7 (2,7 mot 10,4); bruttoforbruk +4,7; husholdninger +2,4. Nettoimport feb–apr 2026. Statnett jan–aug: forbruk +6,2, produksjon −2,5.
 Husholdninger kalenderår: 42,8 TWh 2021, 40,4 TWh 2025 (SSB); Elhub okt 25–sep 26 under 2021 i alle områder.
 Kilder og filer: notat/MAGASIN_EKSPORT_2026-09-21.md, output/tab_magasin_eksport.md.
+
+## 21.09.2026 – tilsig (NVE Kraftsituasjonen veke 37, tabell 4 og 5)
+
+Tilsig uke 1–37 2026 (TWh, avvik fra snitt 2006–2025): Norge 84,2 (−21,6); Sør-Norge NO1+NO2+NO5 55,7 (−12,7); NO1 11,1 (−1,3); NO2 25,1 (−6,2); NO5 19,5 (−5,2). 2025: Norge 100,3 (−6,2); Sør 66,0 (−3,0). Nedbør Sør 2026 41,4 (−12,4). Hydrologisk balanse 2026: Norge −14,7 (magasin −13,9, snø/grunn/markvann −0,8); Sør −15,4 (magasin −14,4, snø/grunn/markvann −1,0); 2025 Sør −3,8. Tall lest manuelt fra pdf-tabeller (tekstuttrekk i .txt ved siden av). Fil: output/tab_tilsig_uke37.csv.

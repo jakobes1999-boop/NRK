@@ -45,10 +45,24 @@ Norge var nettoimportør i februar, mars og april 2026. Nettoeksporten januar–
 
 **Påstand: nordmenn bruker ikke mer strøm enn i 2021.** Riktig for husholdningene målt per kalenderår: 42,8 TWh i 2021 (SSB) mot 40,4 TWh i 2025, og Elhubs tall for oktober 2025 til september 2026 ligger under 2021 i alle prisområder. 2021 var kaldt og lå før prissjokket. Påstanden er samtidig uten betydning for vinteren 2025/26, der husholdningsforbruket januar–juli var 2,4 TWh høyere enn snittet for 2021–2025 og 2,6 TWh høyere enn i 2025. Begge tall er sanne; de svarer på ulike spørsmål.
 
-**Påstand: lave magasiner skyldes eksport, ikke forbruk.** Tallene går motsatt vei. Nettoeksporten i 2026 er den laveste på seks år, og landet importerte netto gjennom tre vintermåneder. Utvekslingen har dempet magasinfallet, ikke forsterket det. Det som avviker fra tidligere år, er høyere innenlandsk forbruk (4,7 TWh over snittet januar–juli) og lavere produksjon (3,0 TWh under) med fortsatt fallende magasiner, som innebærer lavt tilsig. Med bokføringen magasinendring = tilsig − produksjon kan tilsiget ikke tallfestes uten NVEs tilsigsserie, som ikke er hentet. Konklusjonen om eksporten avhenger ikke av tilsiget: eksporten er lavere enn normalt, ikke høyere.
+**Påstand: lave magasiner skyldes eksport, ikke forbruk.** Tallene går motsatt vei. Nettoeksporten i 2026 er den laveste på seks år, og landet importerte netto gjennom tre vintermåneder. Utvekslingen har dempet magasinfallet, ikke forsterket det. Det som avviker fra tidligere år, er høyere innenlandsk forbruk (4,7 TWh over snittet januar–juli) og lavere produksjon (3,0 TWh under) med fortsatt fallende magasiner, som innebærer lavt tilsig. NVEs tall for tilsiget bekrefter dette: tilsiget til Sør-Norge uke 1–37 2026 er 12,7 TWh under normalen, mot 3,0 TWh under i 2025 (avsnittet Tilsig nedenfor). Konklusjonen om eksporten avhenger ikke av tilsiget: eksporten er lavere enn normalt, ikke høyere.
 
 To presiseringer i Moxnes' favør. Eksporten i 2025 var høy (nettoeksport 22,8 TWh for året, høyest i perioden), og magasinene gikk inn i 2026 lavere enn normalt i Sør-Norge. Noe av utgangspunktet for 2026 kan derfor tilskrives 2025. Og en analyse av hva eksporten ville vært uten utenlandskablene er et annet spørsmål enn hva som skjedde i 2026.
 
+## Tilsig
+
+Kilde: NVE, Kraftsituasjonen veke 37 2026 og veke 37 2025 (ukesrapport, pdf), tabell 4 (nedbør og tilsig uke 1–37 mot snitt 2006–2025, for 2025 snitt 2005–2024) og tabell 5 (hydrologisk balanse = avvik magasin + avvik snø, grunn- og markvann). Filer: data/raw/nve_kraftsituasjonen/, tabell i output/tab_tilsig_uke37.csv. Sør-Norge er summen av NO1, NO2 og NO5. NVE publiserer ikke tilsigsserien i API.
+
+| Uke 1–37 | Tilsig 2026 (TWh) | Avvik fra snitt 2026 | Tilsig 2025 | Avvik 2025 | Hydrologisk balanse 2026 | 2025 |
+|---|---|---|---|---|---|---|
+| Norge | 84,2 | −21,6 | 100,3 | −6,2 | −14,7 | −0,9 |
+| Sør-Norge (NO1+NO2+NO5) | 55,7 | −12,7 | 66,0 | −3,0 | −15,4 | −3,8 |
+| NO2 | 25,1 | −6,2 | 30,1 | −1,6 | −10,8 | −3,7 |
+
+Tilsiget til Sør-Norge er 10,3 TWh lavere enn i fjor og 12,7 TWh under normalen. Nedbøren i Sør-Norge uke 1–37 er 12,4 TWh under normalen (NO2 alene 7,6 under). Den hydrologiske balansen i Sør-Norge er 15,4 TWh under normalen, nesten alt i magasinene (avvik snø, grunn- og markvann 1,0 TWh). Bokføringen magasinendring = tilsig − produksjon − nettoeksport ut av området går dermed opp: magasinene i Sør-Norge ligger 16,8 TWh under median (avsnittet Magasinene), tilsiget forklarer om lag 13 av dem, og resten er høyere forbruk med lavere nettoeksport.
+
+Vurdering: hovedforklaringen på de lave magasinene i 2026 er lite tilsig, dernest høyere forbruk. Eksporten trekker i motsatt retning.
+
 ## Ikke hentet
 
-NVEs tilsigsserie (ukentlig, per prisområde) og Statnetts utveksling per kabel. Begge er tilgjengelige og kan legges til om spørsmålet skal forfølges.
+Statnetts utveksling per kabel. Tilgjengelig og kan legges til om spørsmålet skal forfølges.
