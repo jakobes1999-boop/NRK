@@ -719,3 +719,9 @@ Kilder og filer: notat/MAGASIN_EKSPORT_2026-09-21.md, output/tab_magasin_eksport
 ## 21.09.2026 – tilsig (NVE Kraftsituasjonen veke 37, tabell 4 og 5)
 
 Tilsig uke 1–37 2026 (TWh, avvik fra snitt 2006–2025): Norge 84,2 (−21,6); Sør-Norge NO1+NO2+NO5 55,7 (−12,7); NO1 11,1 (−1,3); NO2 25,1 (−6,2); NO5 19,5 (−5,2). 2025: Norge 100,3 (−6,2); Sør 66,0 (−3,0). Nedbør Sør 2026 41,4 (−12,4). Hydrologisk balanse 2026: Norge −14,7 (magasin −13,9, snø/grunn/markvann −0,8); Sør −15,4 (magasin −14,4, snø/grunn/markvann −1,0); 2025 Sør −3,8. Tall lest manuelt fra pdf-tabeller (tekstuttrekk i .txt ved siden av). Fil: output/tab_tilsig_uke37.csv.
+
+## 22.09.2026 – ettergåing av Moxnes' Facebook-innlegg etter Helgemorgen
+
+SSB 14091 årssummer 2010–2026 (TWh): output/tab_elbalanse_aar_2010_2026.csv (2026 = jan–aug). Husholdninger (7.4, finnes fra 2020): 2020 40,5; 2021 42,8; 2022 37,8; 2023 40,4; 2024 40,9; 2025 40,4 (−1,1 prosent mot 2024). Nettoeksport: 2020 20,5; 2021 17,6; 2022 12,5; 2023 17,7; 2024 18,4; 2025 22,8; 2026 jan–aug 3,2. Eksport 2021 25,8 mot 25,0 i 2020.
+SSB 09387 kraftpris husholdninger ekskl. mva (øre/kWh), uveid snitt av kvartaler: 2012–2020 33,4; 2012–2017 30,7; 2018–2020 38,8; 2021 72,2; 2022 156,3; 2023 80,5; 2024 56,1; 2025 64,1; 2026K1–K2 109,9. Tabellen starter 2012, så 2010–2011 er ikke kontrollert.
+Ikke kontrollert: Enova 15 mrd, produksjonskost 12 øre, kabelkapasitet +50 prosent.
