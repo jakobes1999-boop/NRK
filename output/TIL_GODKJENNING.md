@@ -725,3 +725,9 @@ Tilsig uke 1–37 2026 (TWh, avvik fra snitt 2006–2025): Norge 84,2 (−21,6);
 SSB 14091 årssummer 2010–2026 (TWh): output/tab_elbalanse_aar_2010_2026.csv (2026 = jan–aug). Husholdninger (7.4, finnes fra 2020): 2020 40,5; 2021 42,8; 2022 37,8; 2023 40,4; 2024 40,9; 2025 40,4 (−1,1 prosent mot 2024). Nettoeksport: 2020 20,5; 2021 17,6; 2022 12,5; 2023 17,7; 2024 18,4; 2025 22,8; 2026 jan–aug 3,2. Eksport 2021 25,8 mot 25,0 i 2020.
 SSB 09387 kraftpris husholdninger ekskl. mva (øre/kWh), uveid snitt av kvartaler: 2012–2020 33,4; 2012–2017 30,7; 2018–2020 38,8; 2021 72,2; 2022 156,3; 2023 80,5; 2024 56,1; 2025 64,1; 2026K1–K2 109,9. Tabellen starter 2012, så 2010–2011 er ikke kontrollert.
 Ikke kontrollert: Enova 15 mrd, produksjonskost 12 øre, kabelkapasitet +50 prosent.
+
+## 23.09.2026 – NRKs svar: fritidsboliger (Elhub cons_mba, NO1+NO2+NO5)
+
+Kommunefilen fra Elhub har bare gruppen «Privat» (husholdning + hytte); NRK-lik modell M1 (10 prosent) og placebo M5 (5 prosent) er derfor kjørt på samme populasjon som NRK. Statusdataene (D7, 3,0 prosent) gjelder husholdninger 1 000–50 000 kWh, uten hytter.
+GWh jan–jun: Husholdning 2025 14 883, 2026 17 006 (+14,3 prosent); Hytter 913 → 1 113 (+22,0). Vinter okt–apr 24/25 → 25/26: Husholdning 19 832 → 21 775 (+9,8); Hytter 1 242 → 1 439 (+15,9). Hytter er 5,8–6,2 prosent av Privat-volumet. Bidrag fra hytter til Privat-veksten jan–jun: om lag 0,5 prosentpoeng (0,06 × 22 mot 0,06 × 14,3).
+Norgespris-andel 02.09.2026: Husholdning 68,9 prosent (1 388 366 av 2 013 777), Hytter 79,7 prosent (212 639 av 266 765).
