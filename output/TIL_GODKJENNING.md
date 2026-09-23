@@ -753,3 +753,5 @@ NRK-lik M1 med post × hytteandel: 6,6 prosent ved 0 hytter (lineær ekstrapolas
 Filer: output/tab_hytteandel_robust.csv, tab_hytteandel_forlop.csv, tab_hytteandel_nrk_m1.csv.
 
 Forklaringskraft s22 (R2 / justert R2 / R2 for regressorene etter at faste effekter er fjernet; antall absorberte parametre): H1 0,9970 / 0,9969 / 0,247 (247); H2 0,9972 / 0,9971 / 0,157 (349); H3 0,9988 / 0,9984 / 0,018 (2 712); H4 0,9988 / 0,9984 / 0,005 (2 909); H5 0,9989 / 0,9984 / 0,021 (2 909); H6 0,9992 / 0,9988 / 0,026 (3 106); H7 (vektet) 0,9997 / 0,9996 / 0,036 (2 909). N 10 047. NRK-lik M1: R2 innen kommune 0,9416 (NRK oppgir 93,76 prosent), R2 med kommune-FE 0,9938, justert 0,9936, R2 mellom kommuner 0,130.
+
+Målervektet (23.09.2026): hytteandel i panelet uvektet 26,0 prosent, vektet med målere 11,6 prosent. H7 (vektet): 0,38 prosent per 10 pp, bidrag 0,44 pp (95 prosent: −0,12 til 0,99), placebo −0,21 (p 0,03). H7 + egen trend per kommune: 0,60 prosent per 10 pp (p 0,015), bidrag 0,70 pp (0,14 til 1,26), placebo 0,00 (p 0,97). Retter tidligere tabell i chat: vektet bidrag er 0,4–0,7 pp, ikke 1,0.
