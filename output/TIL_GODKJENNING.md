@@ -737,3 +737,9 @@ Norgespris-andel 02.09.2026: Husholdning 68,9 prosent (1 388 366 av 2 013 777), 
 Hytteandel av private målere per kommune (Elhub målerfil 02.09.2026): median 20,2 prosent, kvartiler 9,4 og 34,6, maks 84,2. Hytter er 6 prosent av volumet, men 20 prosent av målerne.
 M1 + post×(hytteandel − median): post_np 0,0892, post×hytteandel 0,1184 (se 0,0285). Delutvalg: alle 197 kommuner 10,0 prosent (placebo 5,2); lav hytteandel (99 kommuner) 8,7 (5,0); høy hytteandel (98) 11,2 (5,4); hytteandel under 5 prosent (36 kommuner) 8,8 (5,4).
 Tolkning: hytter trekker NRK-lik post-effekt opp med 1–2 prosentpoeng på kommunenivå; placeboen er om lag 5 prosent i alle delutvalg og er uavhengig av hyttene.
+
+## 23.09.2026 – tverrsnitt: vinterendring i privatforbruk mot hytteandel (197 kommuner, OLS, HC1)
+
+Utfall: 100 × log-endring i kWh (Privat) okt–apr. Hytteandel = hytter av private målere 02.09.2026, i prosent (median 21,3).
+Etter norgespris (25/26 mot 24/25): helning 0,076 (se 0,029, p 0,010), konstant 8,73, R2 0,02; med gradtallsendring uendret. Placebo (24/25 mot 23/24): helning −0,008 (se 0,006, p 0,22); med gradtall −0,014 (p 0,02). Snitt endring: +10,7 etter, −8,8 før.
+Kvartiler (median hytteandel → endring etter / før): 2,7 → 8,9 / −9,0; 13,9 → 9,8 / −9,0; 27,8 → 9,9 / −7,6; 57,6 → 14,2 / −9,6. Fil: output/tab_hytteandel_kommune_vinter.csv.
