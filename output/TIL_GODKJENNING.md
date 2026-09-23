@@ -731,3 +731,9 @@ Ikke kontrollert: Enova 15 mrd, produksjonskost 12 øre, kabelkapasitet +50 pros
 Kommunefilen fra Elhub har bare gruppen «Privat» (husholdning + hytte); NRK-lik modell M1 (10 prosent) og placebo M5 (5 prosent) er derfor kjørt på samme populasjon som NRK. Statusdataene (D7, 3,0 prosent) gjelder husholdninger 1 000–50 000 kWh, uten hytter.
 GWh jan–jun: Husholdning 2025 14 883, 2026 17 006 (+14,3 prosent); Hytter 913 → 1 113 (+22,0). Vinter okt–apr 24/25 → 25/26: Husholdning 19 832 → 21 775 (+9,8); Hytter 1 242 → 1 439 (+15,9). Hytter er 5,8–6,2 prosent av Privat-volumet. Bidrag fra hytter til Privat-veksten jan–jun: om lag 0,5 prosentpoeng (0,06 × 22 mot 0,06 × 14,3).
 Norgespris-andel 02.09.2026: Husholdning 68,9 prosent (1 388 366 av 2 013 777), Hytter 79,7 prosent (212 639 av 266 765).
+
+## 23.09.2026 – hytter i NRK-lik modell (kommunepanel, M1-oppsett, uveid over kommuner)
+
+Hytteandel av private målere per kommune (Elhub målerfil 02.09.2026): median 20,2 prosent, kvartiler 9,4 og 34,6, maks 84,2. Hytter er 6 prosent av volumet, men 20 prosent av målerne.
+M1 + post×(hytteandel − median): post_np 0,0892, post×hytteandel 0,1184 (se 0,0285). Delutvalg: alle 197 kommuner 10,0 prosent (placebo 5,2); lav hytteandel (99 kommuner) 8,7 (5,0); høy hytteandel (98) 11,2 (5,4); hytteandel under 5 prosent (36 kommuner) 8,8 (5,4).
+Tolkning: hytter trekker NRK-lik post-effekt opp med 1–2 prosentpoeng på kommunenivå; placeboen er om lag 5 prosent i alle delutvalg og er uavhengig av hyttene.
