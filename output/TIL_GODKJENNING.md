@@ -743,3 +743,11 @@ Tolkning: hytter trekker NRK-lik post-effekt opp med 1–2 prosentpoeng på komm
 Utfall: 100 × log-endring i kWh (Privat) okt–apr. Hytteandel = hytter av private målere 02.09.2026, i prosent (median 21,3).
 Etter norgespris (25/26 mot 24/25): helning 0,076 (se 0,029, p 0,010), konstant 8,73, R2 0,02; med gradtallsendring uendret. Placebo (24/25 mot 23/24): helning −0,008 (se 0,006, p 0,22); med gradtall −0,014 (p 0,02). Snitt endring: +10,7 etter, −8,8 før.
 Kvartiler (median hytteandel → endring etter / før): 2,7 → 8,9 / −9,0; 13,9 → 9,8 / −9,0; 27,8 → 9,9 / −7,6; 57,6 → 14,2 / −9,6. Fil: output/tab_hytteandel_kommune_vinter.csv.
+
+## 23.09.2026 – s22: robust panelregresjon, post × hytteandel (197 kommuner, 2022-02–2026-04, klustret på kommune)
+
+Prosent høyere privatforbruk etter okt. 2025 per 10 prosentpoeng høyere hytteandel (placebo med falsk start okt. 2024 i parentes):
+H1 kommune + år×måned-FE 1,37 (0,01); H2 + prisområde×måned 1,42 (0,00); H3 + kommune×kalendermåned 0,41, p 0,10 (−0,15); H4 + gradtall×kommune 0,43, p 0,09 (−0,08); H5 + post×kommunekjennetegn 0,63, p 0,02 (−0,17); H6 + kommunetrend 0,84, p 0,005 (0,06); H7 H5 vektet med målere 0,38, p 0,12 (−0,21).
+Forløp (H4, ref. sesong 2024/25, per 10 pp): 2021/22 (feb–sep 2022) 0,28; 22/23 −0,03; 23/24 0,07; 25/26 (okt–apr) 0,47.
+NRK-lik M1 med post × hytteandel: 6,6 prosent ved 0 hytter (lineær ekstrapolasjon), 9,9 prosent ved snitt hytteandel 26,0 pp. Faktiske kommuner med under 5 prosent hytter: 8,8 prosent (tidligere kjøring).
+Filer: output/tab_hytteandel_robust.csv, tab_hytteandel_forlop.csv, tab_hytteandel_nrk_m1.csv.

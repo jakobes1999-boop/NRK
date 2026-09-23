@@ -35,6 +35,7 @@ run("s17_nettoeksport.py")
 run("s18_nrk_spesifikasjonssok.py")
 run("s20_timetest_prisfordel.py")
 run("s21_magasin_eksport.py")
+run("s22_hytteandel.py")
 # s16_verifiser_prisomrade.py krever nettoppslag (VG) og kjøres separat
 run("vann_dusj.py")
 run("s09_til_godkjenning.py")
