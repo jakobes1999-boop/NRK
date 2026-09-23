@@ -751,3 +751,5 @@ H1 kommune + år×måned-FE 1,37 (0,01); H2 + prisområde×måned 1,42 (0,00); H
 Forløp (H4, ref. sesong 2024/25, per 10 pp): 2021/22 (feb–sep 2022) 0,28; 22/23 −0,03; 23/24 0,07; 25/26 (okt–apr) 0,47.
 NRK-lik M1 med post × hytteandel: 6,6 prosent ved 0 hytter (lineær ekstrapolasjon), 9,9 prosent ved snitt hytteandel 26,0 pp. Faktiske kommuner med under 5 prosent hytter: 8,8 prosent (tidligere kjøring).
 Filer: output/tab_hytteandel_robust.csv, tab_hytteandel_forlop.csv, tab_hytteandel_nrk_m1.csv.
+
+Forklaringskraft s22 (R2 / justert R2 / R2 for regressorene etter at faste effekter er fjernet; antall absorberte parametre): H1 0,9970 / 0,9969 / 0,247 (247); H2 0,9972 / 0,9971 / 0,157 (349); H3 0,9988 / 0,9984 / 0,018 (2 712); H4 0,9988 / 0,9984 / 0,005 (2 909); H5 0,9989 / 0,9984 / 0,021 (2 909); H6 0,9992 / 0,9988 / 0,026 (3 106); H7 (vektet) 0,9997 / 0,9996 / 0,036 (2 909). N 10 047. NRK-lik M1: R2 innen kommune 0,9416 (NRK oppgir 93,76 prosent), R2 med kommune-FE 0,9938, justert 0,9936, R2 mellom kommuner 0,130.

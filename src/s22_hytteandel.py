@@ -82,7 +82,11 @@ def fit(p, post_start, spec, weights=False):
     mod = AbsorbingLS(d.log_kwh, d[x], absorb=d[absorb].astype("category"),
                       interactions=inter or None, weights=d.n_mp if weights else None)
     r = mod.fit(cov_type="clustered", clusters=d.knr.astype("category").cat.codes)
-    return r.params["post_x_hytte"], r.std_errors["post_x_hytte"], r.pvalues["post_x_hytte"], int(r.nobs)
+    n, dfr = int(r.nobs), int(r.df_resid)
+    fit_stats = {"r2": r.rsquared, "r2_adj": 1 - (1 - r.rsquared) * (n - 1) / dfr, "r2_adj_lm": r.rsquared_adj,
+                 "r2_absorbert": r.absorbed_rsquared, "df_absorbert": int(r.df_absorbed), "df_modell": int(r.df_model),
+                 "df_resid": dfr}
+    return r.params["post_x_hytte"], r.std_errors["post_x_hytte"], r.pvalues["post_x_hytte"], n, fit_stats
 
 
 def main():
@@ -91,9 +95,9 @@ def main():
     rows = []
     for spec in ["H1", "H2", "H3", "H4", "H5", "H6", "H7"]:
         w = spec == "H7"
-        b, se, pv, n = fit(p, START, spec, w)
-        bp, sep, pvp, npl = fit(pre, "2024-10", spec, w)
-        rows.append({"spes": spec, "koef": b, "se": se, "p": pv, "n": n,
+        b, se, pv, n, fs = fit(p, START, spec, w)
+        bp, sep, pvp, npl, _ = fit(pre, "2024-10", spec, w)
+        rows.append({"spes": spec, "koef": b, "se": se, "p": pv, "n": n, **fs,
                      "placebo_koef": bp, "placebo_se": sep, "placebo_p": pvp, "placebo_n": npl})
         print(f"{spec}: {100*b:.3f} ({100*se:.3f}) p={pv:.3f} | placebo {100*bp:.3f} ({100*sep:.3f}) p={pvp:.3f}")
     res = pd.DataFrame(rows)
@@ -130,7 +134,11 @@ def main():
     nrk = {"M1_post_ved_0_hytter": rm.params["post"], "se": rm.std_errors["post"],
            "post_x_hytte": rm.params["post_x_hytte"], "snitt_hytteandel_pp": mean_h,
            "M1_post_ved_snitt": rm.params["post"] + mean_h * rm.params["post_x_hytte"],
-           "hytteandel_dato": dato, "kommuner": p.knr.nunique()}
+           "hytteandel_dato": dato, "kommuner": p.knr.nunique(),
+           "M1_r2_within": rm.rsquared_within, "M1_r2_overall": rm.rsquared_overall, "M1_r2_between": rm.rsquared_between,
+           "M1_nobs": int(rm.nobs), "M1_df_resid": int(rm.df_resid)}
+    nrk["M1_r2_lsdv"] = 1 - ((rm.resids ** 2).sum() / ((m.log_kwh - m.log_kwh.mean()) ** 2).sum())
+    nrk["M1_r2_lsdv_adj"] = 1 - (1 - nrk["M1_r2_lsdv"]) * (int(rm.nobs) - 1) / int(rm.df_resid)
     pd.Series(nrk).to_csv(OUT / "tab_hytteandel_nrk_m1.csv", header=["verdi"])
     print(pd.Series(nrk))
 
